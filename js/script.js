@@ -1,5 +1,5 @@
 // настройка слайдера
-const totalCards = 3;
+const totalCards = 2;
 let currentCard  = 0;
 let isDragging   = false;
 let dragStartX   = 0;
