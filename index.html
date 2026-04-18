@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="default">
+
+<div id="entry">
+  <button class="entry-btn" onclick="enterSite()">click to enter...</button>
+</div>
+
+<div id="bg-layer">
+  <img id="bg-image" src="" alt="" style="display:none">
+  <video id="bg-video" autoplay loop muted playsinline style="display:block">
+    <source src="img/6608023897_1_tiktok_6980e28c9a3772_60957466.mp4" type="video/mp4">
+  </video>
+  <audio id="bg-music" loop>
+    <source src="" type="audio/mpeg">
+  </audio>
+  <div id="bg-overlay"></div>
+</div>
+
+<div id="app">
+  <div id="slider-track">
+    <div class="card" data-index="0">
+      <div class="avatar-wrap">
+        <img src="img/photo_2026-04-18_16-49-40.jpg" alt="avatar">
+      </div>
+      <div class="name">shokoww</div>
+      <div class="bio">по делу - чс, по хуйне - лс</div>
+      <div class="socials">
+        <a href="https://t.me/kz09region" target="_blank" title="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M11.994 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm3.98 6.562-1.68 7.924c-.125.558-.453.694-.918.432l-2.546-1.876-1.228 1.182c-.136.135-.25.248-.513.248l.183-2.598 4.726-4.27c.205-.183-.045-.285-.318-.102l-5.84 3.676-2.515-.786c-.547-.172-.558-.547.114-.81l9.823-3.787c.455-.164.852.11.712.767z"/></svg>
+        </a>
+        <a href="https://t.me/winxgz" target="_blank" title="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M11.994 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm3.98 6.562-1.68 7.924c-.125.558-.453.694-.918.432l-2.546-1.876-1.228 1.182c-.136.135-.25.248-.513.248l.183-2.598 4.726-4.27c.205-.183-.045-.285-.318-.102l-5.84 3.676-2.515-.786c-.547-.172-.558-.547.114-.81l9.823-3.787c.455-.164.852.11.712.767z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@luvsooose?_r=1&_t=ZN-95e4wkW6fG2" target="_blank" title="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        </a>
+      </div>
+      <div class="page-dots" id="pageDots"></div>
+    </div>
+
+    <!--вторая карточка-->
+    <div class="card" data-index="1">
+      <div class="sec-title">обо мне</div>
+      <p class="about-text">
+        Привет, продвигаю себя и свои социальные сети.<br>
+        <br>В 17 лет понюхал первый миллион в руках. Открыт набор на онлайн-проект, девушки 18-30 лет.
+      </p>
+      <p class="about-text">
+        Всегда рад новым знакомствам. Владею хорошим знанием английского. Всех обнял)
+      </p>
+      <div class="page-dots" id="pageDots1"></div>
+    </div>
+
+    <!--третья карточка (на будущее)-->
+<div class="card" data-index="2">
+  <div class="sec-title"></div>
+
+  <div class="lang-grid">
+
+    <!---->
+    <div class="lang-item">
+      <div class="lang-icon">
+        <svg viewBox="0 0 24 24" fill="#e34f26"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+      </div>
+      <div class="lang-name"></div>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar-fill" style="--pct: 50%"></div>
+      </div>
+      <div class="lang-pct">50%</div>
+    </div>
+
+    <!---->
+    <div class="lang-item">
+      <div class="lang-icon">
+        <svg viewBox="0 0 24 24" fill="#1572b6"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.246l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531l-.23-2.625 10.059.003-.23-2.622-.44.341z"/></svg>
+      </div>
+      <div class="lang-name"></div>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar-fill" style="--pct: 15%"></div>
+      </div>
+      <div class="lang-pct">15%</div>
+    </div>
+
+    <!---->
+    <div class="lang-item">
+      <div class="lang-icon">
+        <svg viewBox="0 0 24 24" fill="#f7df1e"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+      </div>
+      <div class="lang-name"></div>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar-fill" style="--pct: 3%"></div>
+      </div>
+      <div class="lang-pct">3%</div>
+    </div>
+
+    <!---->
+    <div class="lang-item">
+      <div class="lang-icon">
+        <svg viewBox="0 0 24 24"><defs><linearGradient id="pygrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3776ab"/><stop offset="100%" stop-color="#ffd43b"/></linearGradient></defs><path fill="url(#pygrad)" d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969c0 6.18 3.403 5.96 3.403 5.96h2.03v-2.867s-.109-3.402 3.35-3.402h5.769s3.24.052 3.24-3.13V3.23S18.28 0 11.914 0zm-3.2 1.867a1.044 1.044 0 1 1 0 2.088 1.044 1.044 0 0 1 0-2.088zM12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.121S24 18.211 24 12.031c0-6.18-3.403-5.96-3.403-5.96h-2.03v2.867s.109 3.402-3.35 3.402H9.448s-3.24-.052-3.24 3.13V17.77S5.72 24 12.086 24zm3.2-1.867a1.044 1.044 0 1 1 0-2.088 1.044 1.044 0 0 1 0 2.088z"/></svg>
+      </div>
+      <div class="lang-name"></div>
+      <div class="lang-bar-wrap">
+        <div class="lang-bar-fill" style="--pct: 8%"></div>
+      </div>
+      <div class="lang-pct">8%</div>
+    </div>
+
+  </div>
+
+  <div class="page-dots" id="pageDots2"></div>
+    </div>
+
+  </div>
+</div>
+
+<!--volume-->
+<div id="vol-wrap">
+  <svg id="vol-icon" onclick="toggleMute()" viewBox="0 0 24 24" width="20" height="20"
+    fill="none" stroke="var(--accent)" stroke-width="1.8"
+    stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+    <path id="vol-wave-1" d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+    <path id="vol-wave-2" d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+  </svg>
+  <input type="range" id="vol-slider" min="0" max="1" step="0.01" value="0.10"
+         oninput="setVolume(this.value)">
+  <span id="vol-label">25%</span>
+</div>
+
+<!--(пока нету, хз как реализовать смену темы)-->
+<button id="theme-btn" onclick="cycleTheme()" title="Сменить тему">
+  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+  </svg>
+</button>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
